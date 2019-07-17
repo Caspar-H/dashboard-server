@@ -1,0 +1,34 @@
+{% extends 'dashboard/base.html' %}
+
+
+{% block bokeh_script %}    {{ script | safe }} {% endblock %}
+
+
+
+
+{% block title %}
+    Dashboard
+{% endblock %}
+
+{% block nav_items %}
+    <li class="nav-item active">
+        <a class="nav-link" href="#">Overview</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Cluster Level</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Detailed KPI</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Tail Cells</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Weekly Report</a>
+    </li>
+{% endblock %}
+
+
+{% block bokeh_div %}
+    {{ div | safe }}
+{% endblock %}
